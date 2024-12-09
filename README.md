@@ -69,4 +69,33 @@ Team A 総得点: 23 総失点: 30 勝率: 0.30
 Team D 総得点: 15 総失点: 25 勝率: 0.22
 ```
 - 条件3：試合日が2024-01-05〜2024-03-05かつリーグがAリーグのみの一覧データと合計数
+```bash
+python ability_test.py
+
+試合日 チーム名 対戦チーム名 勝利 点数 試合場所 リーグ
+2024-01-08 Team C Team A 1 3-0 Away Aリーグ
+2024-01-10 Team D Team A 0 0-1 Away Aリーグ
+2024-01-15 Team E Team B 1 4-0 Home Aリーグ
+2024-01-17 Team A Team D 1 3-2 Away Aリーグ
+2024-01-25 Team A Team B 1 1-0 Home Aリーグ
+2024-01-30 Team C Team A 0 0-5 Home Aリーグ
+2024-02-14 Team C Team A 0 3-5 Home Aリーグ
+2024-02-19 Team D Team B 1 3-0 Away Aリーグ
+2024-02-22 Team E Team B 1 5-2 Away Aリーグ
+```
 - 条件4：各チームの「ホーム」と「アウェイ」での勝率を比較した一覧と勝率が最も高いチーム
+```bash
+python ability_test.py
+
+Homeの勝率一覧     |  Awayの勝率一覧
+------------------------------------------
+Team A, 勝率: 0.50 | Team A, 勝率: 0.17
+Team B, 勝率: 0.60 | Team B, 勝率: 0.40
+Team C, 勝率: 0.00 | Team C, 勝率: 0.60
+Team D, 勝率: 0.25 | Team D, 勝率: 0.20
+Team E, 勝率: 0.33 | Team E, 勝率: 0.50
+
+HomeとAwayの中で最も勝率の高いチーム
+------------------------------------------
+Team B, 勝率: 0.60 | Team C, 勝率: 0.60
+```
