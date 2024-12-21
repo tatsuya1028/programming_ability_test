@@ -11,3 +11,14 @@ git pull
     - modifiedが緑色になってることの確認
     - コメント打ち込んでコミット
         - git commit -m "何かしらのコメント"
+    - git pushする
+        - git push origin fetaure/tatuya
+
+
+    - 使うコマンド一覧
+    ```bash
+    git status
+    git add .
+    git commit -m "何かしらのコメント"
+    git push origin fetaure/tatuya
+    ```
