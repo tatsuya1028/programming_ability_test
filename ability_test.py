@@ -107,5 +107,5 @@ if __name__ == "__main__":
     # for i in teams.read_csv():
     #     print(i)
     # teams.teams_calc()
-    # teams.a_league_only()
+    teams.a_league_only()
     teams.winning_percentage_comparison()
